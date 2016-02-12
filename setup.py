@@ -15,7 +15,7 @@ dependency_links = [x.strip().replace("git+", "") for x in requirements if "git+
 
 setup(
     name="cellbell",
-    version="0.0.1",
+    version="0.0.2",
     description="Bell magic for jupyter notebook",
     long_description=readme,
     author="Abhinav Tushar",
