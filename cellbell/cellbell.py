@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import pyglet
 import os
-from IPython.core.magic import Magics, magics_class, line_cell_magic
+
+import pyglet
+from IPython.core.magic import Magics, line_cell_magic, magics_class
 
 BELL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bell.wav")
 
@@ -20,3 +21,10 @@ class CellBellMagic(Magics):
 
         self.shell.run_cell(code)
         bell.play()
+
+def ding():
+    """
+    Standalone function for ringing bell
+    """
+
+    bell.play()

@@ -2,7 +2,8 @@
 cellbell
 =============================
 
-Bell magic for IPython. Rings a bell when cell evaluation (IPython shell or notebook) is complete.
+Bell magic for IPython. Rings a bell when cell evaluation (IPython shell or
+Jupyter notebook) is complete.
 
 ``pip install cellbell``
 
@@ -21,5 +22,13 @@ Use as cell or line magic::
     time.sleep(2)
     print("done")
 
+Can also be used directly by calling ``ding``::
 
-Inspired by `ipython-bell <https://github.com/samwhitehall/ipython-bell>`_, but works on all systems by playing a wav.
+    # Import
+    import cellbell
+
+    cellbell.ding()
+
+
+Inspired by `ipython-bell <https://github.com/samwhitehall/ipython-bell>`_, but
+works on all systems by playing a wav.
